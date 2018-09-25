@@ -21,8 +21,7 @@ class Core{
 		* Controller
 		*/
 		if (file_exists('../app/controller/'.ucfirst($url[0]).'.php')) {
-			$this->currentController = ucfirst($url[0]);
-			unset($url[0]);
+			$this->currentController = ucfirst(array_shift($url));
 		}
 
 		require_once '../app/controller/'.$this->currentController.'.php';
@@ -32,10 +31,9 @@ class Core{
 		/*
 		* Method
 		*/
-		if (isset($url[1])) {
-			if (method_exists($this->currentController, $url[1])) {
-				$this->currentMethod = $url[1];
-				unset($url[1]);
+		if (isset($url[0])) {
+			if (method_exists($this->currentController, $url[0])) {
+				$this->currentMethod = array_shift($url);
 			}
 		}
 
