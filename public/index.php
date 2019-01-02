@@ -1,6 +1,6 @@
 <?php
 
-require_once '../app/config/config.php';
+require_once '../app/config.php';
 
 function myAutoloader($classname){
 	require_once '../app/lib/'.$classname.'.php';

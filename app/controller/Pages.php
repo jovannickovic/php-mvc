@@ -13,15 +13,15 @@ class Pages extends Controller{
 			'description' => "This is <strong>Jovan Ničković's PHP MVC framework</strong>. Please refer to the documentation on how to use it."
 		];
 
-		$this->view('pages/index', $data);
+		$this->view('pages/index', $data); # How to display data v1
 	}
 
 	public function about(){
 
-		$data = [
+		/*$data = [
 			'title' => 'ABOUT US...'
-		];
+		];*/
 
-		$this->view('pages/about', $data);
+		$this->view('pages/about'/*, $data*/); # How to display data v2
 	}
 }
