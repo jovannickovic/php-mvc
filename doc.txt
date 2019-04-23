@@ -1,4 +1,0 @@
-* Change RewriteBase in .htaccess file in PUBLIC folder.
-** Fill in config.php file in APP folder with your own parameters.
-*** A model is being loaded in the __construct() of homonymous file (named in plural, tho) in APP/CONTROLLER. File Page.php in APP/MODEL represents an example with initial setup to deal with database.
-**** There are some .css & .js files with a few lines of some basic code just to make sure whether everything's connected well and working, so feel free to delete them/clean the code if not needed.

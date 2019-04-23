@@ -7,6 +7,6 @@ define('DB_NAME', '|YOUR_DBNAME|');
 
 define('APPROOT', dirname(__FILE__));
 
-define('URLROOT', '|YOUR_URL|'); // NOTE: Delete '/' at the end.
+define('URLROOT', 'http://localhost/php-mvc');
 
 define('SITENAME', '|YOUR_SITENAME|');

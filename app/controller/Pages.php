@@ -10,7 +10,7 @@ class Pages extends Controller{
 
 		$data = [
 			'title' => 'HELLCOME!',
-			'description' => "This is <strong>Jovan Ničković's PHP MVC framework</strong>. Please refer to the documentation on how to use it."
+			'description' => "This is <strong>Jovan Ničković's PHP MVC framework</strong>. Please refer to the README file on how to use it."
 		];
 
 		$this->view('pages/index', $data); # How to display data v1
