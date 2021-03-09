@@ -20,7 +20,7 @@ class Core{
 		/*
 		* Controller
 		*/
-		if (file_exists('../app/controller/'.ucfirst($url[0]).'.php')) {
+		if (isset($url[0]) && file_exists('../app/controller/'.ucfirst($url[0]).'.php')) {
 			$this->currentController = ucfirst(array_shift($url));
 		}
 
